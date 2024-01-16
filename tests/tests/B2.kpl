@@ -1,0 +1,7 @@
+Program B2; (* B2 *)
+Var x : Integer;
+Begin
+    x := 10;
+    x := If x >= 0 then x else -x;
+    Call WriteI(x);
+End. (* B2 *)

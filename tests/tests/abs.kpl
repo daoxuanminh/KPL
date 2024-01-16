@@ -1,0 +1,10 @@
+Program Example2; (* ABS *)
+   
+Var n : Integer;
+
+
+Begin
+  n := -100;
+  n := If n >= 0 Return n Else Return -n;
+  Call WriteI(n);
+End. (* ABS *)

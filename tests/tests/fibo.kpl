@@ -1,0 +1,18 @@
+Program Example2; (* Fibonaci *)
+   
+Var n : Integer;
+
+Function F(n : Integer) : Integer;
+  Begin
+    If n = 0 Then F := 0 
+    Else If n = 1 Then F := 1 
+    Else F := F(n-2) + F(n-1); 
+  End;
+
+Begin
+  For n := 0 To 7 Do
+    Begin
+      Call WriteLn;
+      Call WriteI( F(n));
+    End;
+End. (* Fibonaci *)

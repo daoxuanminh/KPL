@@ -1,0 +1,27 @@
+Program B1; (* B1 *)
+   
+Var fMin: Integer;
+    sMin: Integer;
+    A : Array(. 3 .) Of Integer;
+    n : Integer;
+
+Begin
+    A(. 0 .) := 3;
+    A(. 1 .) := 3;
+    A(. 2 .) := 3;
+    fMin := 100;
+    sMin := 100;
+    For n := 0 To 2 Do
+        Begin
+            if A(. n .) < fMin then
+                Begin
+                    sMin := fMin;
+                    fMin := A(. n .);
+                End
+            else 
+                Begin
+                    if A(. n .) <= sMin then sMin := A(. n .);
+                End;
+        End;
+    Call WriteI(sMin);
+End. (* B1 *)

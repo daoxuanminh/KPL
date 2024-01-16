@@ -1,0 +1,17 @@
+Program Example2; (* swap *)
+   
+Var n : Integer;
+    m : Integer;
+    i : Integer;
+
+Begin
+  n := 100;
+  m := 1;
+  i := 1000;
+  n, m, i := i, n, m;
+  Call WriteI(n);
+  Call WriteLn;
+  Call WriteI(m);
+  Call WriteLn;
+  Call WriteI(i);
+End. (* swap *)

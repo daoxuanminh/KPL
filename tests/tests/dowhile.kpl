@@ -1,0 +1,14 @@
+Program Ex; (* Fibonaci *)
+   
+Var n : Integer;
+
+Begin
+    n := 0;
+    Do
+        Begin
+            n := n + 1;
+            Call WriteI(n);
+            Call WriteLn;
+        End
+    While n<10;
+End. (* Fibonaci *)
